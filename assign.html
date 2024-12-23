@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlour</title>
+    <style>
+      *{
+        background-color:
+      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        
+        .navbar {
+            background-color: #ff69b4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Ice cream variety section */
+        .ice-cream-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .ice-cream-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .ice-cream-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ice-cream-box h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .ice-cream-box p {
+            color: #555;
+        }
+        .contact-form input,
+       .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+      padding: 1rem;
+     }
+
+       
+        .footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .reviews-section {
+            
+           
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .reviews-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .review {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            height:199px;
+        }
+        .review .reviewer {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .review .rating {
+            color: #ffa500;
+        }
+        img{
+          width:223px;
+          height:172px;
+          float: right;
+          text-wrap: wrap;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-container p {
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="navbar">
+        <h1>Ice Cream Parlour</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to the Ice Cream Paradise</h1>
+        <p>Indulge in a variety of delightful flavors and treats!</p>
+    </div>
+
+    
+    <div class="ice-cream-container">
+        <div class="ice-cream-box">
+            <img src="https://www.southernkissed.com/wp-content/uploads/2015/06/Vanilla-Ice-Cream.jpg" alt="Vanilla Ice Cream">
+            <h3>Vanilla Delight</h3>
+            <p>Classic vanilla flavor with a creamy texture.</p>
+        </div>
+        <div class="ice-cream-box">
+            <img src="https://thumbs.dreamstime.com/b/cone-chocolate-chip-bliss-ice-cream-isolated-white-background-generative-ai-high-quality-stock-photo-captures-275972229.jpg">
+            <h3>Choco Bliss</h3>
+            <p>Rich and creamy chocolate ice cream.</p>
+        </div>
+        <div class="ice-cream-box">
+            <img src="https://www.whiskaffair.com/wp-content/uploads/2022/03/Berry-Blast-Smoothie-2-1-1200x1800.jpg" alt="Strawberry Ice Cream">
+            <h3>Berry Blast</h3>
+            <p>Fresh strawberry flavor with real fruit pieces.</p>
+        </div>
+        <div class="ice-cream-box">
+            <img src="http://www.mymoderncookery.com/wp-content/uploads/2017/04/Mint-Ice-Cream-with-Bourbon-Magic-Cream-6-of-11-1076x1624.jpg" alt="Mint Ice Cream">
+            <h3>Mint Magic</h3>
+            <p>Cool and refreshing mint with chocolate chips.</p>
+        </div>
+    </div>
+
+<div class="reviews-section">
+  <h2>People's Reviews</h2>
+
+
+  <div class="review">
+      <div class="reviewer">John Doe</div>
+      <img src="https://mistersoftee-icecream.co.uk/wp-content/uploads/2019/09/reasonspeoplelike-1080x675.jpeg">
+      <div class="rating">★★★★★</div>
+      <div class="comment">Excellent service! Highly recommended.
+        I stumbled upon this website while craving something sweet, and it has been an absolute game-changer! The variety of flavors is incredible, ranging from classic favorites like chocolate and vanilla to unique options like lavender honey and salted caramel pretzel. The website is super easy to navigate, and I loved how detailed the descriptions and images were.
+      </div>
+  </div>
+
+  <div class="review">
+      <div class="reviewer">Jane Smith</div>
+        <img src="https://c.stocksy.com/a/9dV100/z9/359919.jpg">
+      
+      
+      <div class="rating">★★★★☆</div>
+      <div class="comment">Great experience overall, but there is room for improvement.
+        This website exceeded all my expectations! From the moment I logged in, the vibrant images and detailed flavor descriptions had me hooked. They offer an impressive selection of flavors, including vegan and dairy-free options, which was a huge plus for my family. 
+      </div>
+  </div>
+  
+  <section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form class="contact-form">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control mb-3" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control mb-3" placeholder="Email">
+                        </div>
+                    </div>
+                    <textarea class="form-control mb-4" rows="5" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn-primary">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="other-footer-infos-container">
+  <span class="footer-info"><i class="bx bx-map"></i> Address, floor 23, Jupiter</span>
+  <span class="footer-info"><i class="bx bx-phone"></i> 22 (923) 3424 4156</span>
+  <span class="footer-info"><i class="bx bx-mail-send"></i> eCream@domain.com</span>
+  <div class="footer-social-links">
+    <ul>
+      <li><i class='bx bxl-instagram-alt nav-icon clr-transition'></i></li>
+      <li><i class='bx bxl-twitter nav-icon clr-transition'></i></li>
+      <li><i class='bx bxl-facebook-square nav-icon clr-transition'></i></li>
+    </ul>
+  </div>
+</div>
+  <div class="lower-footer">
+    <span class="lower-footer-elt copy">copyright © 2022 eCream</span>
+    <span class="lower-footer-elt developer">Developed by <a href="https://thierrymugisha.me/" class="developerportfoliolink" title="developer portfolio link">Thierry M.</a></span>
+    <span class="lower-footer-elt policy"><a href="#" class="policy-link">Privacy • Policy</a></span>
+
+
+   
+  
+  </footer>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+</body>
+</html>
